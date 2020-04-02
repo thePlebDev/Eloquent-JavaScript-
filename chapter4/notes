@@ -1,0 +1,37 @@
+- all javascript values have properties, the only exceptions are null and undefined
+- the two main ways to access properties in JavaScript are with a dot and with square brackets
+value(x) and value.x the difference is how the x is interpreted.
+- when you use a dot the word after the dot is the literal name of the property
+- when you use a square bracket, the value between the brackets is evaluated to get the property name
+- so basically value.x will literally just go and get the property with the name of x. But value[x]
+will evaluate the expression between the bracket and uses the value of that expression converted to
+a string to get the property
+- you would more likely use the value.x when you know the name of the property but when the name is
+unsure, you would use the value[x] method
+- the dot method only works on properties that have a proper value method
+- you have to use the box  method with arrays because numbers are not proper binding methods, so value.2
+will not work and so we must use value[2]
+
+- when working with objects, if the key to a property is not a valid binding name, then it has to be quoted
+- you can create a new property by object.property = 3, this will create a property or override the old one
+- you can use the in operator to check if a property exists in an object. Object.assign(Object1,Object2),
+this will copy one object into another.
+- numbers,strings, and Booleans are immutable.
+- when working with objects, there is a difference between two objects that reference the same object and
+two objects that contain the same properties.
+- the == operator will compares objects by identity. the == operator converts the things being compared
+to the same value first and then tests their equality
+- the === operator does not do any conversion and only evaluates to true is the operands are of the
+same type and the contents match
+- you can not add properties to immutable data types
+
+- you can use the rest parameter, which is the three dots followed by a name(...numbers). you can use this
+inside a function parameters to allow the function to accept any number of parameters. this is good for
+looping through the values. the rest parameter is bound to an array
+- you can also use this in a in combination with an array, this will spread out the array into
+a function call, passing the values of the array in as separate values.
+
+- having too many global bindings pollutes the namespace
+- with const and let javascript will warn you if the varible has already been used.
+
+- when yo serialize data, it means it is converted into a flat description. One way to do this is to convert it into JSON

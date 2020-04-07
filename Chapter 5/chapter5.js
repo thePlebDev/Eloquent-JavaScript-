@@ -53,8 +53,8 @@ function updateFunc(value){
 }
 
 //EVERYTHING
-//implement every as a function that takes an array and a predicate function as parameters. Write two versions
-// one using a loop and one using the some method
+//implement every as a function that takes an array and a predicate function as parameters.
+// write using a loop
 
 function everything(nums,testing){
   for (i of nums ){

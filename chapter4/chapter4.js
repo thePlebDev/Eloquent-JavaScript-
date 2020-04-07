@@ -50,8 +50,8 @@ function reverseArray(arrays){
     reverse.push(arrays.pop())
   }
   console.log(reverse)
+}
+//reverseArray([1,2,3,4])
+//expected => the reversed array
 
 }
-
-reverseArray([1,2,3,4])
-//expected => the reversed array 

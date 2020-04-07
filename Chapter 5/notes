@@ -1,0 +1,46 @@
+-------------------------------------------CHAPTER 5---------------------------------------------
+
+- the filter methods creates a new array with all the elements that pass the test implemented by the
+provided function
+
+REDUCE METHOD
+- reduce method executes a reducer function(that you provide) on each element of the array resulting in a
+single output value
+
+- the reducer function takes four arguments
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue
+randomArray.reduce(reducer)
+
+- the reducers function's returned value is assigned to the accumulator, whose value is remembered
+across each iteration throughout the array and finally becomes the final single resulting value.
+
+- the currentValue is the current value of the array
+- then you can also provide it with an index and an array value
+
+
+CONCAT METHOD
+- the concat method is used to return two or more arrays. this method does not change the existing arrays
+but instead returns a new array
+
+- so it is to my understanding that the reduce method with be given a function and will execute that function
+on each element of the array. resulting in a single output value. The function that we will be passing the
+function will have two arguments. the first being the accumulator. which is the return value and will be
+remembered across each iteration. so for us we will use that function to concat the current value with the
+accumulator and then it should return one flattened out array.
+- I think my problem is that my reducer function doesn't return anything. I forgot to call return.
+
+HIGH ORDER FUNCTION
+- abstraction is a way to hide details and give the ability to talk about problems at a higher level.
+- a higher order function is a function that operates on other functions, either by taking them as
+arguments or by returning them
+
+THE EVERY METHOD
+- returns true when the given function returns true for ever elemene in the array
+- so basically it is given a test function and if every element in the array passes passes the test funciton
+then the every method will return true.
+- so I have my true method working for my function
+- so the false value is working but I need to figure out what the return value is doing.
+- what does return actually do. The return statement ends function execution and specifies a value to be
+returned to the function caller. when a function encounters a return statement, it always exits its function
+immediately, with no further execution if it's inside a loop.
